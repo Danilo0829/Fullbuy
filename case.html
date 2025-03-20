@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FullBuy</title>  
+    <link rel="icon" type="slike/png" href="slike/fff.png">  
+    <link rel="stylesheet" href="ak.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <input type="checkbox" name="" id="chk1">
+<div class="logo"><h1>FULLBUY</h1></div>
+
+<div class="search-box">
+    <form action="">
+    <input type="text" name="search" id="myinput" id="srch" placeholder="Search">
+    <button type="submit"><i style="color: black;" class="fa-solid fa-magnifying-glass"></i></button>
+   </form>
+</div>
+
+<ul class="menu_dd">
+    <li><a href="#">MORE</a>
+        <div class="drop_menu">
+            <ul>
+                <li><a href="case.html">Case</a></li>
+                <li><a href="agent.html">Agent</a></li>
+                <li><a href="music.html">Music Kit</a></li>
+    
+            </ul>
+         </div>
+        </li>
+
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+   <li>
+    <a target="_blank" href="https://www.instagram.com/danilo_0829/"><i class="fab fa-instagram"></i></a>
+    <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+   </li>
+</ul>
+
+<div class="menu">
+<label for="chk1">
+    <i class="fa-solid fa-bars"></i>
+</label>
+</div>
+
+</header>
+<!-- GLAVNA STRANA -->
+<div class="section-title">
+    <h2>Case</h2>
+</div>
+
+<main>
+    <div class="cotainer">
+        <div>
+            <img src="case/Gallery.png">
+            <h4></h4>
+            <h2>Gallerry</h2>
+            <span>0,85€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Gallery%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Chroma.png">
+            <h4></h4>
+            <h2>Chroma</h2>
+            <span>4,32€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Chroma%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/CSGO Weapon.png">
+            <h4></h4>
+            <h2>Weapon</h2>
+            <span>91,05€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/CS%3AGO%20Weapon%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Dreams & Nightmares.png">
+            <h4></h4>
+            <h2>Nightmares</h2>
+            <span>1,54€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Dreams%20%26%20Nightmares%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Kilowatt.png">
+            <h4></h4>
+            <h2>Kilowatt</h2>
+            <span>0,59€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Kilowatt%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Operation Bravo.png">
+            <h4></h4>
+            <h2>Bravo</h2>
+            <span>42,35€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Operation%20Bravo%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Operation Broken Fang.png">
+            <h4></h4>
+            <h2>Broken Fangd</h2>
+            <span>5,57€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Operation%20Broken%20Fang%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Operation Riptide.png">
+            <h4></h4>
+            <h2>Riptide</h2>
+            <span>7,66€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Operation%20Riptide%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Recoil.png">
+            <h4></h4>
+            <h2>Recoil</h2>
+            <span>0,21€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Recoil%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Revolution.png">
+            <h4></h4>
+            <h2>Revolution</h2>
+            <span>0,43€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Revolution%20Case">BUY</a>
+        </div> 
+        <div>
+            <img src="case/Snakebite.png">
+            <h4></h4>
+            <h2>Snakebite</h2>
+            <span>0,24€</span>
+            <a target="_blank" href="https://steamcommunity.com/market/listings/730/Snakebite%20Case">BUY</a>
+        </div> 
+    
+       
+    
+
+    </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myinput").on("keyup", function(){
+            var value= $(this).val().toLowerCase();
+
+            $(".cotainer div").filter(function () {
+                
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+
+
+
+            })
+        });
+    });
+</script>
+
+
+<!-- FOOTER -->
+
+        <footer>
+
+            <div class="footerNav">
+                <ul>
+                    <li><a target="_blank" href="https://store.steampowered.com/news/app/730">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                </ul>
+            </div>
+                
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2025; Designed by<span class="designer">Danilo</span></p>
+            </div>
+        </footer>
+    
+</body>

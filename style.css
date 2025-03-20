@@ -1,0 +1,242 @@
+html{
+    height: 100%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}body{
+     background: url(slike/cs22.png); 
+    background-size: cover;
+    height: 100vh;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgb(0, 0, 0);
+}#chk1{
+    display: none;
+}i{
+    color: white;
+    cursor: pointer;
+}header .logo{
+    flex: 1;
+    color: white;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}header .search-box{
+    flex: 1;
+    position: relative;
+}.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 40px;
+
+}.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: rgb(255, 255, 255);
+}header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}header ul li{
+    list-style: none;
+} header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid rgb(156, 156, 156);
+    font-size: 18px; 
+}header .menu{
+
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+    position: absolute;
+  }header ul{
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    background: #000;
+    height: calc(60vh - 100px);
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }header .menu{
+    display: block;
+    width: 100px;
+    text-align: center;
+  }#chk1:checked ~ ul{
+    right: 0;
+  }
+
+}
+@media(max-width:600px){
+    header .logo{
+        font-size: 10px;
+        margin-left: 8px;
+    }header ul{
+        width: 100%;
+    }
+}
+.drop_menu{
+    display: none;
+}
+.menu_dd li:hover .drop_menu{
+    display: block;
+    position: absolute;
+    border-width: 7px;
+    border-style: solid;
+    font-size: 15px;
+    border-width: 2px;
+    border-color: #3d3d3d;
+    top: 70%;
+    background-color: rgb(0, 0, 0);
+   }
+.menu_dd li:hover .drop_menu ul{
+    display: block;
+    margin: 7px;
+}
+.menu_dd li:hover .drop_menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+/* GLAVNA STRANA */
+.mm_p{
+    margin: 10px;
+
+}.kt1{
+    background-color: #cac5bdb2;
+    display: inline-block;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 10px;
+}.sss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    text-align: center;
+}.kt1 a img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;  
+    object-fit: contain; 
+}
+.dess{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom:4px solid rgb(31, 31, 31);;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    .kt1 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 400px) {
+    .kt1 {
+        width: 90%;
+    }
+}
+/* FOOTER */
+
+footer{
+    background-color: #111;
+    margin-top: auto;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+       flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
